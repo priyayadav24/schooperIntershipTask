@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/student_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:backgroundTint="@color/colorPrimary">
+
+
+    <!-- TextViewAlignment for FirstName-->
+
+    <TextView
+        android:id="@+id/firstNameForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="30dp"
+        android:text="1. FirstName: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/firstNameForm" />
+
+    <!-- TextViewAlignment for LastName -->
+
+    <TextView
+        android:id="@+id/lastNameForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="2. LastName:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_name"
+        android:layout_toRightOf="@+id/lastNameForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="20sp"
+        />
+
+    <!-- TextViewLayout for ID -->
+    <TextView
+    android:id="@+id/studentIDForm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lastNameForm"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:text="3. Student ID: "
+    android:textSize="20sp" />
+
+     <TextView
+        android:id="@+id/student_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_name"
+        android:layout_toRightOf="@+id/studentIDForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="20sp"
+        />
+
+
+    <!-- TextViewLayout for Address -->
+
+    <TextView
+        android:id="@+id/addressForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentIDForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="4. Address: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_id"
+        android:layout_toRightOf="@+id/addressForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="20sp"
+        />
+
+    <!-- TextViewLayout for DOB -->
+
+    <TextView
+        android:id="@+id/dobForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="5. DOB: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_below="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dobForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="20sp"
+        />
+
+    <!-- TextViewLayout for Mobile -->
+
+    <TextView
+        android:id="@+id/mobileForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dobForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="6. Mobile: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mobileForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/DOB"
+        android:textSize="20sp"
+        />
+
+    <!-- TextViewLayout for UserName -->
+
+    <TextView
+        android:id="@+id/userNameForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="7. UserName: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/mobile"
+        android:layout_toRightOf="@+id/userNameForm"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
